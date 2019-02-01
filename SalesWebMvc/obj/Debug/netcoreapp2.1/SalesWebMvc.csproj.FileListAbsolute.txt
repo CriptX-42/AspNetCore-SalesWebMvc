@@ -5,7 +5,6 @@ C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\bin\Debug\netcoreapp2.1\SalesWe
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\bin\Debug\netcoreapp2.1\SalesWebMvc.pdb
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\bin\Debug\netcoreapp2.1\SalesWebMvc.Views.dll
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\bin\Debug\netcoreapp2.1\SalesWebMvc.Views.pdb
-C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csprojAssemblyReference.cache
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csproj.CoreCompileInputs.cache
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.RazorAssemblyInfo.cache
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.RazorAssemblyInfo.cs
@@ -30,3 +29,5 @@ C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWe
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.dll
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.pdb
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csproj.CopyComplete
+C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csprojAssemblyReference.cache
+C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.g.cshtml.cs
