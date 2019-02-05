@@ -36,3 +36,4 @@ C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\V
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Edit.g.cshtml.cs
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.g.cshtml.cs
 C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Index.g.cshtml.cs
+C:\Git\CSharp\AspNetCore\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Create.g.cshtml.cs
