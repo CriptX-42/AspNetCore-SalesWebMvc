@@ -36,6 +36,12 @@ namespace SalesWebMvc.Controllers
         [ValidateAntiForgeryToken] //para segurança, e não dar SQL injection.
         public IActionResult Create(Seller seller)
         {
+            if (!ModelState.IsValid)
+            {
+                var departments = _departmentService.FindAll();
+                var viewModel = new SellerFormViewModel { Seller = seller, Departments }
+                return View(viewModel);
+            }
             _sellerService.Insert(seller);
             return RedirectToAction(nameof(Index));// se mudar o nome da index lá na ação de controle, o nameof já muda ele pra mim
         }
@@ -95,7 +101,13 @@ namespace SalesWebMvc.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Seller seller)
         {
-            if(id != seller.Id)
+            if (!ModelState.IsValid)
+            {
+                var departments = _departmentService.FindAll();
+                var viewModel = new SellerFormViewModel { Seller = seller, Departments}
+                return View(viewModel);
+            }
+            if (id != seller.Id)
             {
                 return BadRequest();
             }
