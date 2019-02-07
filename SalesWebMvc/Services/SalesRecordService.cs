@@ -9,7 +9,7 @@ namespace SalesWebMvc.Services
 {
     public class SalesRecordService
     {
-        private readonly SalesWebMvcContext _context; //readonly previne para que a dependencia não seja alterada
+        private readonly SalesWebMvcContext _context;
 
         public SalesRecordService(SalesWebMvcContext context)
         {
@@ -25,12 +25,31 @@ namespace SalesWebMvc.Services
             }
             if (maxDate.HasValue)
             {
-                result = result.Where(x => x.Date <= minDate.Value);
+                result = result.Where(x => x.Date <= maxDate.Value);
             }
             return await result
-                .Include(x => x.Saller)
-                .Include(x => x.Saller.Department)
+                .Include(x => x.Seller)
+                .Include(x => x.Seller.Department)
                 .OrderByDescending(x => x.Date)
                 .ToListAsync();
         }
+
+        public async Task<List<IGrouping<Department, SalesRecord>>> FindByDateGroupingAsync(DateTime? minDate, DateTime? maxDate)
+        {
+            var result = from obj in _context.SalesRecord select obj;
+            if (minDate.HasValue)
+            {
+                result = result.Where(x => x.Date >= minDate.Value);
+            }
+            if (maxDate.HasValue)
+            {
+                result = result.Where(x => x.Date <= maxDate.Value);
+            }
+            return await result
+                .Include(x => x.Seller)
+                .Include(x => x.Seller.Department)
+                .GroupBy(x => x.Seller.Department)
+                .ToListAsync();
+        }
+    }
 }

@@ -119,7 +119,7 @@ namespace SalesWebMvc.Controllers
             }
             try
             {
-                await _sellerService.Update(seller);
+                await _sellerService.UpdateAsync(seller);
                 return RedirectToAction(nameof(Index));
             }
             catch (NotFoundExcelption e)

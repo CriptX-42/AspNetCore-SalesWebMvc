@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20190204131833_Initial.cs" />
+    <Compile Remove="Migrations\20190204131833_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20190204161041_OtherEntities.cs" />
+    <Compile Remove="Migrations\20190204161041_OtherEntities.Designer.cs" />
+    <Compile Remove="Migrations\20190205123036_DepartmentForeignKey.cs" />
+    <Compile Remove="Migrations\20190205123036_DepartmentForeignKey.Designer.cs" />
+    <Compile Remove="Migrations\20190207135810_refatorando.cs" />
+    <Compile Remove="Migrations\20190207135810_refatorando.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
